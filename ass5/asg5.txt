@@ -1,0 +1,19 @@
+In this assignment, you need to model First Order Natural Deduction 
+Proof Trees as a data type.
+ 
+
+First, decide on how you will represent a sequent Gamma |- phi, where 
+Gamma is a set of formulas. You will need efficient ways of accessing 
+phi, and of searching through Gamma. 
+
+
+For each rule in ND, you will have a constructor.  
+Name the constructor AndI if it is And-introduction, etc. 
+ If the rule is a k-ary rule, the constructor will have arity k+1.  
+ The first argument will always be the consequent of the rule (the sequent in the conclusion).   
+ The remaining arguments will be Natural Deduction Proof Trees, the roots of which 
+are intended to correspond to the sequents in the antecedents of the rule.
+
+Now write a recursive function wfndp that checks if a candidate Natural Deduction 
+Proof Tree is indeed well formed, i.e., the conditions that should apply regarding 
+the various sequents that appear in the rule corresponding to the constructors are in fact met. 

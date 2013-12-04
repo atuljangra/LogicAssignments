@@ -1,0 +1,18 @@
+Define an OCaml data type for representing propositions, based on a suitable representation of propositional letters.   
+It should have al the connectives defined in class.
+
+Define functions
+size
+ht
+letters
+which, given a proposition, return the number of atoms, the height of the AST of the proposition, and the propositional letters
+
+Define a suitable representation for TruthAssignments (also called valuations),
+Define the truth function as a recursive function, given a proposition and a truthAssignment
+
+Define nnf, which takes a proposition and converts it into negation normal form
+Define cnf, which takes a proposition and converts it into conjunctive normal form
+Define dnf, which takes a proposition and converts it into disjunctive normal form
+
+Show with suitable examples, that the nnf, cnf and dnf transformations preserve truth.
+Give examples of exponential blow up in the cnf and dnf conversions.

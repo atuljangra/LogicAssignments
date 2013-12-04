@@ -1,0 +1,11 @@
+Read Hernik reif Andersen's Paper on BDDs.  Determine efficient data structures (non-functional ones are good for this assignment) to implement them
+
+Implement the basic operations of making and building a BDDs and applying a given boolean operation on them.  
+
+As a basic exercise, you should build the BDDs for an arbitrary given proposition (syntax from Assignment 1), and 
+show some well-known tautologies, contradictions and contingencies have a unique representation.  Show two different propositions are logically equivalent. 
+
+Then (for additional credit) as an example you should encode a simple transition system of a tic-tac-toe (noughts and crosses) game, with two players.
+This is involves a 3x3 matrix (or nine squares) wich can each be empty or hold an X or an O.  
+You need to write  the boolean formulas that encode the legitimate positions: the initial position, legitimate transitions, winning positions, etc. 
+Think of what are legitimate transitions...(you need a boolean "turn" variable for X or O)

@@ -1,0 +1,36 @@
+Assignment 1
+
+I. In OCaml, implement an efficient package for sets.  Your package should define a polymorphic type ('s set)  (data type) -- for (at least finite) sets.  
+You can use any representation, (lists, functions, functional arrays...)  but must provide the representational invariant.
+
+Your data type 'a set must support the following operations:
+0. emptyset: 'a set
+1. member: 'a -> 'a set -> bool
+2. subseteq: 'a set ->  set -> 's set -> bool
+3. setequal:  'a set -> 'a set -> bool
+4. union: 'a set -> 'a set -> 'a set
+5. intersect: 'a set -> 'a set -> 'a set
+6. difference: 'a set -> 'a set -> 'a set
+7. cartesian: 'a set -> 'b set -> ('a * 'b) set
+8. power: 'a set  -> 'a set set
+
+Your documentation should include the time and space complexity for the operations.
+
+(Any other useful operations will be appreciated).
+
+II.   In OCaml, based on your set representation, provide
+an efficient package for binary relations (on at least AxA, or more generally on AxB, where possible).
+Your package on relations should support the following operations:
+a. Identity relation
+b. Relation composition
+c. Relational inverse
+
+d. Union of relations
+e. Intersection of relations
+f. Reflexive closure of a given relation
+g. Symmetric closure of a given relation
+h. Transitive closure of a given relation.
+i. Reflexive transitive closure of a given relation
+j. Equivalence closure of a given relation
+
+[For d-j, you may just compute these in a form where the membership question can be efficiently answered.  Think of what you learned in your data structures course, rather than blindly following the definition].

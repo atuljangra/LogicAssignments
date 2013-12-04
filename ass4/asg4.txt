@@ -1,0 +1,24 @@
+Represent formulas in a First order logic language as a data type
+(given a set of variables, and a signature Sigma and collection of
+predicate symbols Pi with their arities.
+
+Write a function wff that checks if a given formula is well-formed 
+with respect to the function and predicate symbol signatures
+
+Write syntactic functions fsize, fht, treesize, treeht, that list 
+the formula size , formula height, tree size and tree height of
+a given formula.
+
+Write a function that lists the set of free variables in a formula.
+
+Write a "function" prenex that converts a given formula (sentence) 
+into prenex normal form.
+Write a function skolemize that converts a prenex form formula into 
+a skolemized form where there are no existentially quantified variables.
+
+Write a function that takes a skolem-form formula and converts its 
+"matrix" into CNF (Product of Sums) clausal form.
+
+Write a function that -- given a finite set of clauses, and two identified 
+clauses in that set, checks if they can be resolved, and if so produces 
+their resolvant clause, otherwise raising an exception.
